@@ -2,30 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cho danh sách các điểm thi ở trong một mảng.
-        Hãy viết hàm findMax() với đầu vào là một mảng điểm
-        và đầu ra là điểm số cao nhất được tìm thấy trong danh sách đó.
-        Khai báo được hàm, bao gồm cả tham số
-        Dùng vòng lặp để duyệt được mảng
-        Tìm được giá trị lớn nhất
+    <title>Hãy viết một chương trình để biểu diễn hình tròn, với mô tả của lớp hình tròn như sau:
+        Circle: Tên lớp
+        -x: Toạ độ x
+        -y: Toạ độ y
+        -radius: bán kính
+        -color: Màu sắc (sử dụng max hex)
+        +render(canvas): Hiển thị hình tròn trên một canvas
+        Hãy thực hiện các thao tác theo kịch bản sau:
+        - Tạo một hình tròn có toạ độ 10, 10 và bán kính 100, màu #000000
+        - Hiển thị hình tròn trên một canvas bằng cách sử dụng phương thức render
+        Khai báo được lớp Circle
+        Khai báo được phương thức render của lớp Circle
+        Tạo được hình tròn theo yêu cầu
+        Sử dụng được phương thức render để hiển thị hình tròn
         Viết mã sạch
+
     </title>
 </head>
+<canvas id="myCanvas" height="500" width="500" style="background-color: gray; border: 2px solid red"></canvas>
 <body>
 <script>
-    let arr = [5,6,7,8,9,10];
-    function findMax(arr) {
-        let max = arr[0];
-        for (let i = 1; i < arr.length; i++) {
-            if (max < arr[i]) {
-                max = arr[i];
-            }
+    class Circle {
+        constructor(x, y, radius, color) {
+            this._x = x;
+            this._y = y;
+            this._radius = radius;
+            this._color = color;
+
         }
-        // console.log(max);
-        return max;
+
+        get color() {
+            return this._color;
+        }
+
+        set color(value) {
+            this._color = value;
+        }
+
+        get x() {
+            return this._x;
+        }
+
+        set x(value) {
+            this._x = value;
+        }
+
+        get y() {
+            return this._y;
+        }
+
+        set y(value) {
+            this._y = value;
+        }
+
+        get radius() {
+            return this._radius;
+        }
+        set radius(value) {
+            this._radius = value;
+        }
+
+
+        render() {
+            let circle = document.getElementById('myCanvas').getContext('2d');
+            circle.fillStyle = 'red';
+            circle.arc(50,50,this._radius,0,2*Math.PI);
+            circle.stroke();
+        }
+
     }
-    findMax(arr);
-    let max = findMax();
+    let circle = new Circle(10,10,100,'#000000');
+    circle.render();
 </script>
 </body>
 </html>

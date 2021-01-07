@@ -188,7 +188,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../OOP-Circle/circle.html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../loop-practice-2/fibonacci.html" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -200,7 +200,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609984679987</updated>
-      <workItem from="1609984681128" duration="5554000" />
+      <workItem from="1609984681128" duration="6722000" />
     </task>
     <servers />
   </component>
@@ -212,10 +212,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1609985859746" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1609989865365">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1609990302741">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1609989865365" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1609990302741" />
     <state x="92" y="92" width="1182" height="544" key="dock-window-1" timestamp="1609985076042">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
